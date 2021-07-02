@@ -16,6 +16,7 @@ public class CodeWordChecker {
         this.mini = mini;
         this.maxi = maxi;
         this.key = key;
+
     }
     public CodeWordChecker(String key){
         mini = 6;
@@ -23,31 +24,11 @@ public class CodeWordChecker {
         this.key = key;
     }
 
+
     public boolean isValid(String word){
         //method isValid accepts a String parameter and returns true/false if the String is a valid code word
-        if(word.length() < mini){
-            System.out.println("too short!");
-            return false;
-        }
-        if(word.length() > maxi){
-            System.out.println("too long!");
-            return false;
-        }
-        if(word.contains(key)){
-            System.out.println("key word present");
-            return false;
-        }
-        else {
-            return true;
-        }
-
-
-        //return word.length() >= mini && word.length() <= maxi && !word.contains(key);
+        return word.length() >= mini && word.length() <= maxi && !word.contains(key);
     }
-
-
-
-
 
     public char charAt(int index){
         //Returns the char value at the specified index
@@ -71,12 +52,12 @@ public class CodeWordChecker {
 
     public int indexOf(int ch){
     //Returns the index within this string of the first occurrence of the specified character
-        codeWord.indexOf(ch);
+        return codeWord.indexOf(ch);
     }
 
     public int indexOf(String str){
     //Returns the index within this string of the first occurrence of the specified substring
-        codeWord.indexOf(str);
+        return codeWord.indexOf(str);
     }
 
     public boolean isEmpty(){
@@ -104,7 +85,6 @@ public class CodeWordChecker {
     //Returns a (possibly new) string whose value is this string, with any leading and trailing whitespace removed.
         return codeWord.trim();
     }
-
 
 
 
