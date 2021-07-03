@@ -45,10 +45,10 @@ public class CodeWordChecker {
         return codeWord.contains(s);
     }
 
-    //public boolean equals(Object anObject){
+    public boolean equals(Object anObject){
     //Compares this string to the specified object
-
-    //}
+        return codeWord == anObject;
+    }
 
     public int indexOf(int ch){
     //Returns the index within this string of the first occurrence of the specified character
