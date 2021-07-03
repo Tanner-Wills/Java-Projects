@@ -27,6 +27,7 @@ public class CodeWordChecker {
 
     public boolean isValid(String word){
         //method isValid accepts a String parameter and returns true/false if the String is a valid code word
+        codeWord = word;
         return word.length() >= mini && word.length() <= maxi && !word.contains(key);
     }
 

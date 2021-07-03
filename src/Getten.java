@@ -6,6 +6,13 @@ public class Getten {
         String codeWord = "GonFreecs";
         System.out.println(codeWord.length());
         System.out.println(codeWord.contains("Free"));
+        codeWord.length();
+        codeWord.charAt(4);
+        codeWord.concat("nen");
+        codeWord.isEmpty();
+        codeWord.equals(checker1);
+        checker2.isValid("Hisoka");
+
 
     }
 }
